@@ -1,11 +1,6 @@
 require("dotenv").config();
 const { Pool } = require("pg");
 
-console.log("PGHOST:", process.env.PGHOST);
-console.log("PGUSER:", process.env.PGUSER);
-console.log("PGDATABASE:", process.env.PGDATABASE);
-console.log("PGPORT:", process.env.PGPORT);
-
 // Crear pool de conexiones
 const pool = new Pool({
   user: process.env.PGUSER,
