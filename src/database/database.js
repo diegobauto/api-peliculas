@@ -1,18 +1,18 @@
 require("dotenv").config();
 const { Pool } = require("pg");
 
-console.log("DB_HOST:", process.env.DB_HOST);
-console.log("DB_USER:", process.env.DB_USER);
-console.log("DB_NAME:", process.env.DB_NAME);
-console.log("DB_PORT:", process.env.DB_PORT);
+console.log("PGHOST:", process.env.PGHOST);
+console.log("PGUSER:", process.env.PGUSER);
+console.log("PGDATABASE:", process.env.PGDATABASE);
+console.log("PGPORT:", process.env.PGPORT);
 
 // Crear pool de conexiones
 const pool = new Pool({
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT || 5432,
+  user: process.env.PGUSER,
+  password: process.env.PGPASSWORD,
+  database: process.env.PGDATABASE,
+  host: process.env.PGHOST,
+  port: process.env.PGPORT || 5432,
   max: 10, // Máximo de conexiones simultáneas
   idleTimeoutMillis: 10000, // Tiempo de inactividad antes de cerrar conexión
   connectionTimeoutMillis: 2000, // Tiempo máximo para obtener una conexión

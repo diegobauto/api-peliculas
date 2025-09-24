@@ -31,11 +31,11 @@ A continuación se declaran los pasos para la instalación y ejecución de la AP
     PORT=3000
 
     # Database
-    DB_HOST=localhost
-    DB_PORT=5432
-    DB_NAME=db_peliculas
-    DB_USER=postgres
-    DB_PASSWORD=postgres
+    PGHOST=localhost
+    PGPORT=5432
+    PGDATABASE=db_peliculas
+    PGUSER=postgres
+    PGPASSWORD=postgres
     ```
 
 4. **Ejecutar archivo Docker Compose**
