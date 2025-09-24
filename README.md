@@ -119,25 +119,28 @@ src/
 ## 📖 Ejemplos de Uso (funcionamiento API)
 
 - Obtener lista de categorias
-![Obtener lista de categorias](public/)
+![Obtener lista de categorias](public/01-Obtener-categorias.gif)
 
-- Crear una pelicula
-![Crear una pelicula](public/)
+- Crear una pelicula (reciente)
+![Crear una pelicula](public/02-Crear-una-pelicula-_reciente_.gif)
 
-- Crear un usuario
-![Crear un usuario](public/)
-
-- Obtener lista de películas
-![Obtener lista de películas](public/)
-
-- Obtener lista de usuarios
-![Obtener lista de usuarios](public/)
-
-- Marcar pelicula como vista por un usuario
-![Marcar pelicula como vista por un usuario](public/)
-
-- Obtener lista de usuarios (mostrando películas vistas)
-![Obtener lista de usuarios](public/)
+- Crear una pelicula (futura)
+![Crear una pelicula](public/02-Crear-una-pelicula-_posterior_.gif)
 
 - Obtener lista de novedades
-![Obtener lista de novedades](public/)
+![Obtener lista de novedades](public/03-Obtener-novedades.gif)
+
+- Obtener lista de peliculas
+![Obtener lista de peliculas](public/04-Obtener-peliculas.gif)
+
+- Crear un usuario
+![Crear un usuario](public/05-Crear-un-usuario.gif)
+
+- Obtener lista de usuarios 
+![Obtener lista de usuarios](public/06-Obtener-usuarios.gif)
+
+- Marcar pelicula como vista por un usuario
+![Marcar pelicula como vista por un usuario](public/07-Marcar-pelicula.gif)
+
+- Obtener lista de usuarios (mostrando películas vistas)
+![Obtener lista de usuarios](public/08-Obtener-ususrios-_con-peliculas_.gif)
