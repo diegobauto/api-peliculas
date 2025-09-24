@@ -4,7 +4,7 @@ class UsuarioRepository {
   async crearUsuario({ nombre, correo, contrasena }) {
     const { rows } = await pool.query(
       `INSERT INTO usuarios(nombre, correo, contrasena) 
-      VALUES ($1, $2, $3) RETURNING *`,
+      VALUES ($1, $2, $3) RETURNING id, nombre, correo`,
       [nombre, correo, contrasena]
     );
     return rows[0];

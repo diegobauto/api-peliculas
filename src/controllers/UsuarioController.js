@@ -114,6 +114,14 @@ class UsuarioController {
    *     tags:
    *       - Usuarios
    *     summary: Marcar pelicula como vista por un usuario
+   *     parameters:
+   *       - in: path
+   *         name: id
+   *         required: true
+   *         schema:
+   *           type: string
+   *           format: uuid
+   *         description: ID del usuario
    *     requestBody:
    *       required: true
    *       content:
@@ -149,7 +157,7 @@ class UsuarioController {
    */
   marcarPelicula = catchAsync(async (req, res) => {
     const id_usuario = req.params.id;
-    const usuario  = await UsuarioService.marcarPelicula(id_usuario,req.body);
+    const usuario  = await UsuarioService.marcarPelicula(id_usuario, req.body);
     res.status(200).json({
       status: 200,
       success: true,
